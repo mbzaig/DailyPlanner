@@ -37,11 +37,13 @@ $(document).ready(function () {
     }
     checkTime();
 
-
+// Function to save the info upon even of clicking the save button
     $(".saveBtn").on("click", function () {
         console.log(this);
         var selectedTime = $(this).parent().attr("id");
+
         console.log("The Description of Event is "+ selectedTime);
+        
         var eventInfo = $(this).siblings(".description").val();
         console.log("The Description of Event is "+ eventInfo);
        //Write to local storage
